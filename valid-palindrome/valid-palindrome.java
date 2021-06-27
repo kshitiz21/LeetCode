@@ -4,10 +4,10 @@ class Solution {
         int j = s.length() - 1;
         s = s.toLowerCase();
         while(i <= j){
-            if(!(Character.isLetterOrDigit(s.charAt(i)) && Character.isLetterOrDigit(s.charAt(i)))){
+            if(!(Character.isLetterOrDigit(s.charAt(i)))){
                 i++;
             }
-            else if(!(Character.isLetterOrDigit(s.charAt(j)) && Character.isLetterOrDigit(s.charAt(j)))){
+            else if(!(Character.isLetterOrDigit(s.charAt(j)))){
                 j--;
             }
             else if(s.charAt(i) == s.charAt(j)){
